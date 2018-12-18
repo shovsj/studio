@@ -1,0 +1,84 @@
+{
+    "script": {
+        "type": "",
+        "content": ""
+    },
+    "specJson": {
+        "category": "textanalytics",
+        "func": "brightics.function.text_analytics$regexp_tokenizer",
+        "name": "brightics.function.text_analytics$regexp_tokenizer",
+        "context": "python",
+        "label": "Tokenizer (Regular Expression)",
+        "description": "",
+        "tags": [
+            "tokenizer"
+        ],
+        "version": "3.6",
+        "inputs": {
+            "table": ""
+        },
+        "outputs": {
+            "out_table": ""
+        },
+        "meta": {
+            "table": {
+                "type": "table"
+            },
+            "out_table": {
+                "type": "table"
+            }
+        },
+        "params": [
+            {
+                "id": "input_col",
+                "label": "Input Column",
+                "description": "Input column",
+                "mandatory": true,
+                "items": [],
+                "visibleOption": [],
+                "control": "ColumnSelector",
+                "columnType": [],
+                "validation": [],
+                "multiple": false
+            },
+            {
+                "id": "gaps",
+                "label": "Gaps",
+                "description": "Gaps",
+                "mandatory": true,
+                "items": [],
+                "visibleOption": [],
+                "control": "BooleanRadio",
+                "columnType": [],
+                "validation": []
+            },
+            {
+                "id": "pattern",
+                "label": "Regular Expression Pattern",
+                "description": "Regular Expression Pattern",
+                "mandatory": false,
+                "items": [],
+                "visibleOption": [],
+                "control": "InputBox",
+                "columnType": [],
+                "validation": [],
+                "type": "String",
+                "placeHolder": "\\s+"
+            },
+            {
+                "id": "output_col_name",
+                "label": "Output Column Name",
+                "description": "Output column name",
+                "mandatory": false,
+                "items": [],
+                "visibleOption": [],
+                "control": "InputBox",
+                "columnType": [],
+                "validation": [],
+                "placeHolder": "tokens",
+                "type": "String"
+            }
+        ]
+    },
+    "md": ""
+}
